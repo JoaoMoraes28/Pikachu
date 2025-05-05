@@ -63,8 +63,8 @@ main {
 }
 
 .pikachu img {
-    width: 32vw;
-    height: 31vw;
+    width: 790px;
+    height: 780px;
 }
 
 .texto {
@@ -117,6 +117,7 @@ footer {
     }
 
     .maior {
+        padding-left: 20px;
         margin-top: -50px;
         width: 720px;
         height: 160px;
@@ -125,15 +126,15 @@ footer {
     .menor {
         width: 540px;
         height: 120px;
-        margin-top: -440px;
+        margin-top: -260px;
         margin-left: 90px;
     }
 
     .pikachu img {
-        width: 710px;
-        height: 700px;
-        margin-left: -220px;
-        margin-top: -170px;
+        width: 540px;
+        height: 530px;
+        margin-left: -140px;
+        margin-top: -90px;
     }
 
     .texto {
@@ -143,25 +144,29 @@ footer {
 
     .texto h2 {
         font-size: 4rem;
+        width: 600px;
+        text-align: center;
     }
 
     .texto p {
         font-size: 1.5rem;
         width: 600px;
+        text-align: center;
     }
 
     section {
         width: 768px;
         display: grid;
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
+        justify-content: start;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: 200px 1fr;
+        
     }
-
-    section button {
-        grid-row: 2/2;
-        margin-left: -570px;
-        margin-top: 20px;
     
+    section button {
+        margin-top: 60px;
+        grid-row: 2/2;
+        grid-column: 2/3;
     }
 
     footer {
@@ -171,28 +176,28 @@ footer {
     @media (max-width: 360px) {
         
         .pikachu img {
-            width: 260px;
-            height: 250px;
-            margin-left: -125px;
-            margin-top: -110px;
+            width: 360px;
+            height: 350px;
+            margin-left: -135px;
+            margin-top: -90px;
         }
 
         .maior {
-            width: 250px;
-            height: 50px;
+            width: 350px;
+            height: 70px;
             margin-top: -90px;
         }
 
         .menor {
-            width: 190px;
-            height: 30px;
-            margin-top: -65px;
-            margin-left: 28px;
+            width: 270px;
+            height: 50px;
+            margin-top: -58px;
+            margin-left: 49px;
         }
 
         .pokeMenu {
-            margin-top: 20px;
-            margin-left: -10px;
+            margin-top: 15px;
+            margin-left: 10px;
         }
         
         header img {
@@ -201,17 +206,27 @@ footer {
         }
 
         header span {
-            font-size: 1.3rem;
+            font-size: 2rem;
+        }
+
+        section {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin-left: 23px;
+            width: 359px;
+            grid-template-columns: 10px 1fr 50px;
+            
         }
 
         .texto {
-            margin-top: -15px;
-            margin-left: -30px;
+            margin-left: 250px;
         }
 
         .texto h2 {
-            font-size: 1.7rem;
-            width: 300px;
+            font-size: 2.5rem;
+            width: 350px;
+            
         }
 
         .texto p {
@@ -219,11 +234,12 @@ footer {
         }
 
         section button {
-            width: 250px;
+            width: 320px;
             height: 80px;
             font-size: 40px;
-            margin-left: -612px;
-            margin-top: -120px;
+            grid-column: 2/3;
+            margin-top: -40px;
+            margin-left: -12px;
         }
         
         section img {
